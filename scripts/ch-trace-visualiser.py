@@ -54,9 +54,9 @@ def add_traced_block(thread_group, depth, traced_block):
     width = str(duration_to_px_width(
         traced_block["timestamp"], traced_block["end_timestamp"]))
 
-    clip = ET.SubElement(g, "clipPath", attrib={
-        "id": "clip_%s" % (traced_block["event"]),
-    })
+    clip = ET.SubElement(
+        g, "clipPath", attrib={"id": f'clip_{traced_block["event"]}'}
+    )
     ET.SubElement(clip, "rect", attrib={
         "width": width,
         "height": "1.5em",
@@ -70,8 +70,15 @@ def add_traced_block(thread_group, depth, traced_block):
         "height": "1.5em",
         "fill": "#%x%x%x" % (int(red * 255), int(green * 255), int(blue * 255))
     })
-    text = ET.SubElement(g, "text", attrib={
-        "x": "0.2em", "y": "1em", "clip-path": "url(#clip_%s)" % (traced_block["event"])})
+    text = ET.SubElement(
+        g,
+        "text",
+        attrib={
+            "x": "0.2em",
+            "y": "1em",
+            "clip-path": f'url(#clip_{traced_block["event"]})',
+        },
+    )
     text.text = "%s (%dms)" % (traced_block["event"], duration_ms(
         traced_block["timestamp"], traced_block["end_timestamp"]))
 
@@ -85,8 +92,9 @@ for thread in report["events"]:
         thread_events, key=lambda traced_block: nano_time(traced_block["timestamp"]))
     thread_group = ET.SubElement(
         svg, "g", attrib={"transform": "translate(%d,%d)" % (padding, thread_offset)})
-    thread_text = ET.SubElement(thread_group, "text", attrib={
-                                "y": "1em"}).text = "Thread: %s" % (thread)
+    thread_text = ET.SubElement(
+        thread_group, "text", attrib={"y": "1em"}
+    ).text = f"Thread: {thread}"
     thread_children = ET.SubElement(thread_group, "g", attrib={
         "transform": "translate(0, 18)"})
     for traced_block in thread_events:
