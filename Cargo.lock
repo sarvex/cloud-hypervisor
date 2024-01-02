@@ -44,7 +44,7 @@ checksum = "224afbd727c3d6e4b90103ece64b8d1b67fbb1973b1046c2281eed3f3803f800"
 name = "api_client"
 version = "0.1.0"
 dependencies = [
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -72,7 +72,7 @@ dependencies = [
  "vm-fdt",
  "vm-memory",
  "vm-migration",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -156,7 +156,7 @@ dependencies = [
  "virtio-queue",
  "vm-memory",
  "vm-virtio",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -203,7 +203,7 @@ dependencies = [
  "tracer",
  "vm-memory",
  "vmm",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
  "wait-timeout",
 ]
 
@@ -276,7 +276,7 @@ dependencies = [
  "vm-device",
  "vm-memory",
  "vm-migration",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -458,7 +458,7 @@ dependencies = [
  "thiserror",
  "vfio-ioctls",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -539,7 +539,7 @@ source = "git+https://github.com/cloud-hypervisor/kvm-bindings?branch=ch-v0.6.0-
 dependencies = [
  "serde",
  "serde_derive",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -550,7 +550,7 @@ checksum = "b8f8dc9c1896e5f144ec5d07169bc29f39a047686d29585a91f30489abfaeb6b"
 dependencies = [
  "kvm-bindings",
  "libc",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -643,7 +643,7 @@ version = "0.1.0"
 source = "git+https://github.com/firecracker-microvm/micro-http?branch=main#b538bf89e50be83b6fa9ab1896727ff61e02fa13"
 dependencies = [
  "libc",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -673,7 +673,7 @@ dependencies = [
  "libc",
  "serde",
  "serde_derive",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
  "zerocopy",
 ]
 
@@ -684,14 +684,14 @@ source = "git+https://github.com/rust-vmm/mshv?branch=main#0b2af251285385f8e39c2
 dependencies = [
  "libc",
  "mshv-bindings",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
 name = "net_gen"
 version = "0.1.0"
 dependencies = [
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -716,7 +716,7 @@ dependencies = [
  "virtio-queue",
  "vm-memory",
  "vm-virtio",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -850,7 +850,7 @@ dependencies = [
  "vm-device",
  "vm-memory",
  "vm-migration",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -980,7 +980,7 @@ dependencies = [
  "libc",
  "log",
  "remain",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -998,7 +998,7 @@ version = "0.1.0"
 dependencies = [
  "libc",
  "log",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -1252,7 +1252,7 @@ dependencies = [
  "serde",
  "serde_json",
  "ssh2",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
  "wait-timeout",
 ]
 
@@ -1292,7 +1292,7 @@ dependencies = [
  "log",
  "net_gen",
  "thiserror",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1341,7 +1341,7 @@ dependencies = [
  "serde_derive",
  "syn",
  "versionize_derive",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1359,7 +1359,7 @@ name = "vfio-bindings"
 version = "0.4.0"
 source = "git+https://github.com/rust-vmm/vfio?branch=main#43439e056ddfa84a4f7906ee7f2f58be70505c08"
 dependencies = [
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1377,7 +1377,7 @@ dependencies = [
  "thiserror",
  "vfio-bindings",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1394,7 +1394,7 @@ dependencies = [
  "thiserror",
  "vfio-bindings",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1419,7 +1419,7 @@ dependencies = [
  "bitflags",
  "libc",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1434,7 +1434,7 @@ dependencies = [
  "virtio-bindings 0.1.0",
  "virtio-queue",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1454,7 +1454,7 @@ dependencies = [
  "virtio-bindings 0.2.0",
  "virtio-queue",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -1472,7 +1472,7 @@ dependencies = [
  "vhost-user-backend",
  "virtio-bindings 0.2.0",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -1519,7 +1519,7 @@ dependencies = [
  "vm-memory",
  "vm-migration",
  "vm-virtio",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -1531,7 +1531,7 @@ dependencies = [
  "log",
  "virtio-bindings 0.1.0",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.11.2",
 ]
 
 [[package]]
@@ -1553,7 +1553,7 @@ dependencies = [
  "thiserror",
  "vfio-ioctls",
  "vm-memory",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
 ]
 
 [[package]]
@@ -1639,15 +1639,25 @@ dependencies = [
  "vm-memory",
  "vm-migration",
  "vm-virtio",
- "vmm-sys-util",
+ "vmm-sys-util 0.12.0",
  "zerocopy",
 ]
 
 [[package]]
 name = "vmm-sys-util"
-version = "0.11.1"
+version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd64fe09d8e880e600c324e7d664760a17f56e9672b7495a86381b49e4f72f46"
+checksum = "48b7b084231214f7427041e4220d77dfe726897a6d41fddee450696e66ff2a29"
+dependencies = [
+ "bitflags",
+ "libc",
+]
+
+[[package]]
+name = "vmm-sys-util"
+version = "0.12.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9d95e3e9913565d364e3e5b20827f6705fce127ed69a98c0903bce446e48ba1d"
 dependencies = [
  "bitflags",
  "libc",

@@ -46,7 +46,7 @@ thiserror = "1.0.38"
 tpm = { path = "tpm"}
 tracer = { path = "tracer" }
 vmm = { path = "vmm" }
-vmm-sys-util = "0.11.0"
+vmm-sys-util = "0.12.0"
 vm-memory = "0.10.0"
 
 # List of patched crates
